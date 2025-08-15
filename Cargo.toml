@@ -11,4 +11,4 @@ all = ["short-run-time", "long-run-time"]
 
 [dependencies]
 anyhow = "1.0.99"
-my_lib = { path = "../mylib" }
+my_lib = { git = "https://github.com/DrFlowerkick/mylib", branch = "main" }
