@@ -1,0 +1,20 @@
+{
+  "rust-analyzer.cargo.features": ["all"],
+  "cSpell.language": "en,de-de",
+  "cSpell.dictionaries": ["en", "de-de"],
+  "cSpell.enabled": true,
+  "cSpell.words": ["Swatinem"],
+  "cSpell.ignorePaths": [
+    "assets/**",
+    ".git/{info,lfs,logs,refs,objects}/**",
+    ".git/{index,*refs,*HEAD}",
+    ".vscode",
+    "**/*.lock"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.formatOnSave": true
+  }
+}
