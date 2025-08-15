@@ -4,11 +4,11 @@ use advent_of_code_2021::run;
 
 fn main() {
     if let Err(err) = run() {
-        println!("Error occurred: {}", err);
+        println!("Error occurred: {err}");
 
         // look for source
         if let Some(source) = err.source() {
-            println!("Source of error: {:?}", source);
+            println!("Source of error: {source:?}");
         }
     }
 }
