@@ -55,11 +55,11 @@ pub fn day_02() -> Result<()> {
     let input = include_str!("../../assets/day_02.txt");
 
     let result_part1 = dive(input);
-    println!("result day 02 part 1: {}", result_part1);
+    println!("result day 02 part 1: {result_part1}");
     assert_eq!(result_part1, 2_117_664);
 
     let result_part2 = dive_with_aim(input);
-    println!("result day 02 part 2: {}", result_part2);
+    println!("result day 02 part 2: {result_part2}");
     assert_eq!(result_part2, 2_073_416_724);
 
     Ok(())
@@ -75,11 +75,11 @@ mod tests {
         let input = include_str!("../../assets/day_02_example.txt");
 
         let result_part1 = dive(input);
-        println!("result day 02 part 1: {}", result_part1);
+        println!("result day 02 part 1: {result_part1}");
         assert_eq!(result_part1, 150);
 
         let result_part2 = dive_with_aim(input);
-        println!("result day 02 part 2: {}", result_part2);
+        println!("result day 02 part 2: {result_part2}");
         assert_eq!(result_part2, 900);
 
         Ok(())

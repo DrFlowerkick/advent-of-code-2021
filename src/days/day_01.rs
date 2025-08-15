@@ -37,11 +37,11 @@ pub fn day_01() -> Result<()> {
     let input = include_str!("../../assets/day_01.txt");
 
     let result_part1 = count_increases(input);
-    println!("result day 01 part 1: {}", result_part1);
+    println!("result day 01 part 1: {result_part1}");
     assert_eq!(result_part1, 1_527);
 
     let result_part2 = count_increases_sliding_window(input, 3);
-    println!("result day 01 part 2: {}", result_part2);
+    println!("result day 01 part 2: {result_part2}");
     assert_eq!(result_part2, 1_575);
 
     Ok(())
@@ -57,11 +57,11 @@ mod tests {
         let input = include_str!("../../assets/day_01_example.txt");
 
         let result_part1 = count_increases(input);
-        println!("result day 01 part 1: {}", result_part1);
+        println!("result day 01 part 1: {result_part1}");
         assert_eq!(result_part1, 7);
 
         let result_part2 = count_increases_sliding_window(input, 3);
-        println!("result day 01 part 2: {}", result_part2);
+        println!("result day 01 part 2: {result_part2}");
         assert_eq!(result_part2, 5);
 
         Ok(())

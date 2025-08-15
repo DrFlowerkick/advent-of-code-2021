@@ -7,11 +7,11 @@ pub fn day_01() -> Result<()> {
 
     /*
     let result_part1 =
-    println!("result day_01 part 1: {}", result_part1);
+    println!("result day_01 part 1: {result_part1}");
     assert_eq!(result_part1, XXX);
 
     let result_part2 =
-    println!("result day_01 part 2: {}", result_part2);
+    println!("result day_01 part 2: {result_part2}");
     assert_eq!(result_part2, YYY);
     */
     Ok(())
@@ -28,13 +28,13 @@ mod tests {
 
         /*
         let result_part1 =
-        println!("result day_01 part 1: {}", result_part1);
+        println!("result day_01 part 1: {result_part1}");
         assert_eq!(result_part1, XXX);
 
         let result_part2 =
-        println!("result day_01 part 2: {}", result_part2);
+        println!("result day_01 part 2: {result_part2}");
         assert_eq!(result_part2, YYY);
-         */
+        */
 
         Ok(())
     }
