@@ -3,7 +3,7 @@
   "cSpell.language": "en,de-de",
   "cSpell.dictionaries": ["en", "de-de"],
   "cSpell.enabled": true,
-  "cSpell.words": ["mylib", "Swatinem"],
+  "cSpell.words": ["ascii", "mylib", "Swatinem"],
   "cSpell.ignorePaths": [
     "assets/**",
     ".git/{info,lfs,logs,refs,objects}/**",
@@ -16,5 +16,8 @@
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "editor.formatOnSave": true
+  },
+  "github.copilot.enable": {
+    "enabled": false
   }
 }
