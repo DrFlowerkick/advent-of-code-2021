@@ -2,18 +2,35 @@
 
 use anyhow::Result;
 
-pub fn day_01() -> Result<()> {
-    let _input = include_str!("../../assets/day_01.txt");
+struct ChallengeInput {}
 
-    /*
-    let result_part1 =
+impl From<&str> for ChallengeInput {
+    fn from(_value: &str) -> Self {
+        ChallengeInput {}
+    }
+}
+
+impl ChallengeInput {
+    fn solution_part_1(&self) -> u64 {
+        0
+    }
+    fn solution_part_2(&self) -> u64 {
+        0
+    }
+}
+
+pub fn solution() -> Result<()> {
+    let input = include_str!("../../assets/day_01.txt");
+    let challenge = ChallengeInput::from(input);
+
+    let result_part1 = challenge.solution_part_1();
     println!("result day_01 part 1: {result_part1}");
-    assert_eq!(result_part1, XXX);
+    //assert_eq!(result_part1, XXX);
 
-    let result_part2 =
+    let result_part2 = challenge.solution_part_2();
     println!("result day_01 part 2: {result_part2}");
-    assert_eq!(result_part2, YYY);
-    */
+    //assert_eq!(result_part2, YYY);
+
     Ok(())
 }
 
@@ -24,17 +41,16 @@ mod tests {
 
     #[test]
     fn test_example_part() -> Result<()> {
-        let _input = include_str!("../../assets/day_01_example.txt");
+        let input = include_str!("../../assets/day_01_example.txt");
+        let example = ChallengeInput::from(input);
 
-        /*
-        let result_part1 =
+        let result_part1 = example.solution_part_1();
         println!("result day_01 part 1: {result_part1}");
-        assert_eq!(result_part1, XXX);
+        //assert_eq!(result_part1, XXX);
 
-        let result_part2 =
+        let result_part2 = example.solution_part_2();
         println!("result day_01 part 2: {result_part2}");
-        assert_eq!(result_part2, YYY);
-        */
+        //assert_eq!(result_part2, YYY);
 
         Ok(())
     }
