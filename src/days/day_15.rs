@@ -4,7 +4,7 @@ use anyhow::Result;
 use my_lib::{my_map_point::MapPoint, my_map_two_dim::MyMap2D};
 use std::collections::{HashMap, VecDeque, hash_map::Entry};
 
-#[cfg(feature = "long-run-time")]
+#[cfg(any(feature = "long-run-time", test))]
 type BigCave = MapPoint<5, 5>;
 
 #[derive(Clone, Copy, Default)]
@@ -17,7 +17,7 @@ impl From<char> for RiskLevel {
 }
 
 impl RiskLevel {
-    #[cfg(feature = "long-run-time")]
+    #[cfg(any(feature = "long-run-time", test))]
     fn get_level(&self, big_cave: BigCave) -> u32 {
         let distance = big_cave.distance((0, 0).into()) as u32;
         let mut level = self.0 + distance;
@@ -87,7 +87,7 @@ impl<const X: usize, const Y: usize> ChallengeInput<X, Y> {
         }
         lowest_risk.unwrap().1
     }
-    #[cfg(feature = "long-run-time")]
+    #[cfg(any(feature = "long-run-time", test))]
     fn solution_part_2(&self) -> u32 {
         let mut seen: HashMap<(MapPoint<X, Y>, BigCave), u32> = HashMap::new();
         let mut visit: VecDeque<(usize, MapPoint<X, Y>, BigCave, u32)> = VecDeque::new();
@@ -203,7 +203,7 @@ pub fn solution() -> Result<()> {
     println!("result day_15 part 1: {result_part1}");
     assert_eq!(result_part1, 447);
 
-    #[cfg(feature = "long-run-time")]
+    #[cfg(any(feature = "long-run-time", test))]
     {
         let result_part2 = challenge.solution_part_2();
         println!("result day_15 part 2: {result_part2}");
