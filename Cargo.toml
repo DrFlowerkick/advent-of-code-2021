@@ -11,6 +11,7 @@ all = ["short-run-time", "long-run-time"]
 
 [dependencies]
 anyhow = "1.0.99"
+fixedbitset = "0.5.7"
 my_lib = { git = "https://github.com/DrFlowerkick/mylib", branch = "main" }
 petgraph = "0.8.2"
 serde = { version = "1.0", features = ["derive"] }

@@ -3,7 +3,14 @@
   "cSpell.language": "en,de-de",
   "cSpell.dictionaries": ["en", "de-de"],
   "cSpell.enabled": true,
-  "cSpell.words": ["ascii", "Deque", "mylib", "Swatinem", "unimodal"],
+  "cSpell.words": [
+    "ascii",
+    "Deque",
+    "fixedbitset",
+    "mylib",
+    "Swatinem",
+    "unimodal"
+  ],
   "cSpell.ignorePaths": [
     "assets/**",
     ".git/{info,lfs,logs,refs,objects}/**",

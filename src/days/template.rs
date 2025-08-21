@@ -40,7 +40,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_example_part() -> Result<()> {
+    fn test_example_day_01() -> Result<()> {
         let input = include_str!("../../assets/day_01_example.txt");
         let example = ChallengeInput::from(input);
 
