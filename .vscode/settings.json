@@ -24,6 +24,10 @@
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "editor.formatOnSave": true
   },
+  "git.repositoryScanIgnoredFolders": [
+    "~/.cargo/git/checkouts",
+    "~/.cargo/git/db"
+  ],
   "github.copilot.enable": {
     "enabled": false
   }
